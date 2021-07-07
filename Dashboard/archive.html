@@ -1,0 +1,535 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>Sidebar template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/1aiet-logo.png" />
+    <link rel="stylesheet" href="assets/css/nav_side.css">
+    <link rel="stylesheet" href="assets/css/Contents.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/Contents.css">
+
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a href="index.html"><img style="height: 50;" src="assets\images\1aiet-logo.png" alt="alvas"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link m-1 glow" href="#" onclick="alert('notificaions')"><i
+                                class="fas fa-bell glow "></i></a>
+                    </li>
+                    <li class="nav-item glow">
+                        <a class="nav-link glow" href="#" onclick="alert('logout function call')">
+                            <i class="fas fa-power-off p-1"> Logout</i>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark btn-black top" style="margin-top: 70px;" href="#">
+            <i class="fas fa-bars top"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+                    <a href="#">Alvas erp</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="sidebar-header">
+                    <div class="user-pic">
+
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">
+                            <strong>Shilpa</strong>
+                        </span>
+                        <span class="user-role">Faculty</span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-header  -->
+                <div class="sidebar-search">
+                    <div>
+                        <div class="input-group">
+                            <input type="text" class="form-control search-menu" placeholder="Search...">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar-search  -->
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>General</span>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-tachometer-alt"></i>
+                                <span>Dashboard</span>
+                            </a>
+
+                        </li>
+
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-book"></i>
+                                <span>Timetable</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Class Timetable</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Internal Assessment</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Other Assessment</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Class Transfer</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-sitemap sidebar-small-icons"></i>
+                                <span>Attendance</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Student Attendance</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fas fa-bullseye"></i>
+                                <span>Lesson Plan</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Planning & Tracking</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CO PO Mapping</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-chart-line"></i>
+                                <span>Marks Scored</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Internal Assessment</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Other Assessment</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lab</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">University Exam</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-globe"></i>
+                                <span>Feedback</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span>Reports</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Progress Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Course File</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Assessment Method</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+                        <!-- <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span>Performance</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">My Performance</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Goal Sheet</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">AGP</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li> -->
+
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-bell"></i>
+                                <span>Alerts / Notifications</span>
+                            </a>
+                        </li>
+
+
+
+
+                        <!-- <li class="header-menu">
+                            <span>Extra</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-book"></i>
+                                <span>Documentation</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar"></i>
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-folder"></i>
+                                <span>Examples</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-content  -->
+
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <main class="page-content">
+            <div class="main-container">
+                <div class="position-relative">
+
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col">
+                            <div class="col">
+                                <a href="">
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                        <button class="btn btn-primary btn-black me-md-2" type="button">
+                                            <span>
+                                                <i class="fas fa-eye  "></i> View Attendance
+                                            </span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="container">
+
+                            <div _ngcontent-c10="" class="row">
+                                <!---->
+                                <div _ngcontent-c10="" class="col-md-2 col-sm-2 ng-star-inserted">
+                                    <div _ngcontent-c10="" class="form-group"><select _ngcontent-c10=""
+                                            class="form-control dropdown ng-valid ng-touched ng-dirty">
+                                            <option _ngcontent-c10="" disabled="disabled" selected="selected">
+                                                Academic
+                                                Year
+                                            </option>
+                                            <!---->
+                                            <option _ngcontent-c10="" value="2020-21" class="ng-star-inserted">
+                                                2020-21
+                                            </option>
+                                            <option _ngcontent-c10="" value="2019-20" class="ng-star-inserted">
+                                                2019-20
+                                            </option>
+                                            <option _ngcontent-c10="" value="2018-19" class="ng-star-inserted">
+                                                2018-19
+                                            </option>
+                                            <option _ngcontent-c10="" value="2017-18" class="ng-star-inserted">
+                                                2017-18
+                                            </option>
+                                            <option _ngcontent-c10="" value="2016-17" class="ng-star-inserted">
+                                                2016-17
+                                            </option>
+                                        </select></div>
+                                </div>
+                                <div _ngcontent-c10="" class="col-md-2 col-sm-2">
+                                    <!---->
+                                    <div _ngcontent-c10="" class="form-group ng-star-inserted"><select _ngcontent-c10=""
+                                            class="form-control dropdown ng-untouched ng-pristine ng-valid">
+                                            <option _ngcontent-c10="" disabled=""> Degree-Dept-Course-Sem-Sec
+                                            </option>
+                                            <!---->
+                                            <option _ngcontent-c10="" value="BE-CS-CGL(17CSL68)-6-A-2-CBCS 2017"
+                                                class="ng-star-inserted">BE-CS-CGL(17CSL68)-6-A-2-CBCS 2017</option>
+                                            <option _ngcontent-c10="" value="BE-CS-CGL(17CSL68)-6-A-1-CBCS 2017"
+                                                class="ng-star-inserted">BE-CS-CGL(17CSL68)-6-A-1-CBCS 2017</option>
+                                            <option _ngcontent-c10="" value="BE-CS-OOC(18CS45)-4-B-CBCS 2018"
+                                                class="ng-star-inserted">BE-CS-OOC(18CS45)-4-B-CBCS 2018</option>
+                                            <option _ngcontent-c10="" value="BE-CHE-CPPS(18CPS13)-1-C-CBCS 2018"
+                                                class="ng-star-inserted">BE-CHE-CPPS(18CPS13)-1-C-CBCS 2018</option>
+                                            <option _ngcontent-c10="" value="BE-CS-ADE LAB(18CSL37)-3-A-1-CBCS 2018"
+                                                class="ng-star-inserted">BE-CS-ADE LAB(18CSL37)-3-A-1-CBCS 2018
+                                            </option>
+                                            <option _ngcontent-c10="" value="BE-CS-OOC(18CS45)-4-A-CBCS 2018"
+                                                class="ng-star-inserted">BE-CS-OOC(18CS45)-4-A-CBCS 2018</option>
+                                            <option _ngcontent-c10="" value="BE-CS-ADE(18CS33)-3-A-CBCS 2018"
+                                                class="ng-star-inserted">BE-CS-ADE(18CS33)-3-A-CBCS 2018</option>
+                                            <option _ngcontent-c10="" value="BE-CS-CGL(17CSL68)-6-B-1-CBCS 2017"
+                                                class="ng-star-inserted">BE-CS-CGL(17CSL68)-6-B-1-CBCS 2017</option>
+                                            <option _ngcontent-c10="" value="BE-CS-ADE LAB(18CSL37)-3-A-2-CBCS 2018"
+                                                class="ng-star-inserted">BE-CS-ADE LAB(18CSL37)-3-A-2-CBCS 2018
+                                            </option>
+                                            <option _ngcontent-c10="" value="BE-CS-CGL(17CSL68)-6-B-2-CBCS 2017"
+                                                class="ng-star-inserted">BE-CS-CGL(17CSL68)-6-B-2-CBCS 2017</option>
+                                        </select></div>
+                                </div>
+                                <!---->
+                                <div _ngcontent-c10="" class="col-md-2 col-sm-2 ng-star-inserted">
+                                    <div _ngcontent-c10="" class="form-group"><select _ngcontent-c10=""
+                                            class="form-control dropdown text-transform ng-pristine ng-valid ng-touched">
+                                            <option _ngcontent-c10="" disabled=""> Month </option>
+                                            <!---->
+                                            <option _ngcontent-c10="" value="MAY" class="ng-star-inserted">may
+                                            </option>
+                                            <option _ngcontent-c10="" value="APRIL" class="ng-star-inserted">april
+                                            </option>
+                                            <option _ngcontent-c10="" value="MARCH" class="ng-star-inserted">march
+                                            </option>
+                                            <option _ngcontent-c10="" value="FEBRUARY" class="ng-star-inserted">
+                                                february
+                                            </option>
+                                        </select></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="container  my-5">
+                    <!-- <div class="card m-0 p-0"> -->
+                    <div class="row">
+
+                        <div class="col col-md-6 col-12">
+                            <h4>Student Attendance</h4>
+
+
+                            <div class="progress my-4">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%"
+                                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25">10%
+                                </div>
+                            </div>
+
+                            <div class="progress my-4 ">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                                    style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                                </div>
+                            </div>
+
+                            <div class="progress my-4">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+                                    style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%
+                                </div>
+                            </div>
+
+
+                            <div class="progress my-4">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                                    style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-6 col-12">
+                            <br>
+                            <table class="table  table-Responsive">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Attendance</th>
+                                        <th scope="col">% of Students</th>
+                                        <th scope="col">No Of Students</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>0-60</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>60-75</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>75-85</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>85-100</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="container-fluid my-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col col-md-4 my-2 mx-auto">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Shortage Percentage</h5>
+                                            <h3 class="card-subtitle mb-2 text-muted text-center"> 99% </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-4 my-2 mx-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Number of Classes Taken </h5>
+                                            <h3 class="card-subtitle mb-2 text-muted text-center"> 46 </h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="row my-5 ">
+                                <div class="col col-md-4 my-2 mx-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Number of Classes Planned</h5>
+                                            <h3 class="card-subtitle mb-2 text-muted text-center"> 49 </h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col col-md-4 my-2 mx-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Number of Classes Remaining</h5>
+                                            <h3 class="card-subtitle mb-2 text-muted text-center"> 5 </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+                </script>
+            </div>
+        </main>
+        <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/side_nav.js"></script>
+
+</body>
+
+</html>
